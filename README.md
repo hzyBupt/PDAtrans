@@ -50,8 +50,8 @@ Pre-trained models can be downloaded from [GoogleDrive](https://drive.google.com
 
 Example usage:
 ```
-    python nnunetv2/inference/predict_from_raw_data.py -d 180 -f 0 -ei nn-UNet_240424_102628
-    python nnunetv2/custom_evaluation/abdominal_organs_eval.py
+python nnunetv2/inference/predict_from_raw_data.py -d 180 -f 0 -ei nn-UNet_240424_102628
+python nnunetv2/custom_evaluation/abdominal_organs_eval.py
  ```   
 # Acknowledgement
 
