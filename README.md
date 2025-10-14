@@ -1,6 +1,8 @@
 # Joint Parallel Modeling with Direction-Wise Convolution and Deformable Transformer for 3D Medical Image Segmentation
 
-This is the code for paper "Joint Parallel Modeling with Direction-Wise Convolution and Deformable Transformer for 3D Medical Image Segmentation". The model is implemented with PyTorch.
+This is the code for paper "Joint Parallel Modeling with Direction-Wise Convolution and Deformable Transformer for 3D Medical Image Segmentation". The model is implemented with PyTorch. 
+
+This work is an extension of our previous MICCAI 2022 publication PHTrans. In this extended version, we introduce newly designed modules, conduct a more comprehensive experimental evaluation across three public datasets, and provide a broader review of related methods. Additionally, we perform a deeper analysis of semantic information aggregation within the model. Qualitative visualizations further illustrate the effectiveness of the proposed approach.
 
 # Abstruct
 
@@ -50,6 +52,16 @@ Example usage:
 # Acknowledgement
 
 The style of coding is borrowed from [nnUNet](https://github.com/MIC-DKFZ/nnUNet) and partially built upon the [PHTrans](https://github.com/lseventeen/PHTrans). We thank the authors for sharing their codes.
+```
+  @inproceedings{liu2022phtrans,
+  title={Phtrans: Parallelly aggregating global and local representations for medical image segmentation},
+  author={Liu, Wentao and Tian, Tong and Xu, Weijin and Yang, Huihua and Pan, Xipeng and Yan, Songlin and Wang, Lemeng},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={235--244},
+  year={2022},
+  organization={Springer}
+}
+```
 
 # Contact
 
