@@ -41,18 +41,18 @@ The dataset can be downloaded from:
 
 
 ## Training
-
+```
 CUDA_VISIBLE_DEVICES=1 python nnunetv2/run/run_training.py 180 3d_fullres 0 -wm offline -cn PHTransv3 
-
+```
 ## Testing
 
 Pre-trained models can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1j8R9vYCYs_q-_2VgqO1llClV7BHH_Hxd/view?usp=sharing).
 
 Example usage:
-
+```
     python nnunetv2/inference/predict_from_raw_data.py -d 180 -f 0 -ei nn-UNet_240424_102628
     python nnunetv2/custom_evaluation/abdominal_organs_eval.py
-    
+ ```   
 # Acknowledgement
 
 The style of coding is borrowed from [nnUNet](https://github.com/MIC-DKFZ/nnUNet) and partially built upon the [PHTrans](https://github.com/lseventeen/PHTrans). We thank the authors for sharing their codes.
