@@ -9,11 +9,7 @@ Three-dimensional (3D) medical images often exhibit anisotropic voxel spacing an
 # Pipline
 
 <div align="center">
-  <img src="Sys_model2.png" width="85%">
-</div>
-
-<div align="center">
-  <img src="fig_network_overview.png" width="85%">
+  <img src="Figure.png" width="85%">
 </div>
 
 # Usage
