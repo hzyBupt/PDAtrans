@@ -34,7 +34,11 @@ source ~/.bashrc
 ```
 ## Dataset
 
-The dataset can be downloaded from [WORD](https://github.com/HiLab-git/WORD) .
+The dataset can be downloaded from:
+[WORD](https://github.com/HiLab-git/WORD);
+[AMOS](https://amos22.grand-challenge.org/);
+[BTCV](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789).
+
 
 ## Training
 
