@@ -18,7 +18,6 @@ Three-dimensional (3D) medical images often exhibit anisotropic voxel spacing an
 
 ```
 git clone https://github.com/hzyBupt/PDAtrans
-
 ```
 Change the dataset folders in setPATH.sh .
 ```
