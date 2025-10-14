@@ -14,35 +14,43 @@ Three-dimensional (3D) medical images often exhibit anisotropic voxel spacing an
 
 # Usage
 
-## Requirements
+## Environment
 
 ```
-git clone https://github.com/llsurreal919/ADMIT
+git clone https://github.com/hzyBupt/PDAtrans
 
-pip install -r requirements.txt
 ```
-
+Change the dataset folders in setPATH.sh .
+```
+export nnUNet_raw="/ai/data/nnUNet_raw/"
+export nnUNet_preprocessed="/ai/data/nnUNet_preprocessed/"
+export nnUNet_results="/ai/code/nnUNet_results/"
+export PYTHONPATH=/ai/code/nnUNet/nnunetv2:$PYTHONPATH
+```
+```
+source setPATH.sh
+source ~/.bashrc
+```
 ## Dataset
 
-The test dataset can be downloaded from [kaggle](https://www.kaggle.com/datasets/drxinchengzhu/kodak24) .
-
-The training dataset can be downloaded from [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) .
+The dataset can be downloaded from [WORD](https://github.com/HiLab-git/WORD) .
 
 ## Training
 
-We will release the tutorial soon.
+CUDA_VISIBLE_DEVICES=1 python nnunetv2/run/run_training.py 180 3d_fullres 0 -wm offline -cn PHTransv3 
 
 ## Testing
 
-Pre-trained models can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1o7aqd5OgAIltr8NK6tmF-jkeq7xmc1HS/view?usp=sharing).
+Pre-trained models can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1j8R9vYCYs_q-_2VgqO1llClV7BHH_Hxd/view?usp=sharing).
 
 Example usage:
 
-    python test_dyna_kodak.py
-
+    python nnunetv2/inference/predict_from_raw_data.py -d 180 -f 0 -ei nn-UNet_240424_102628
+    python nnunetv2/custom_evaluation/abdominal_organs_eval.py
+    
 # Acknowledgement
 
-The style of coding is borrowed from [Dynamic_JSCC](https://github.com/mingyuyng/Dynamic_JSCC) and partially built upon the [Neighborhood Attention Transformer](https://github.com/SHI-Labs/Neighborhood-Attention-Transformer). We thank the authors for sharing their codes.
+The style of coding is borrowed from [nnUNet](https://github.com/MIC-DKFZ/nnUNet) and partially built upon the [PHTrans](https://github.com/lseventeen/PHTrans). We thank the authors for sharing their codes.
 
 # Contact
 
