@@ -66,6 +66,17 @@ The style of coding is borrowed from [nnUNet](https://github.com/MIC-DKFZ/nnUNet
   organization={Springer}
 }
 ```
+```
+@article{HE2026109320,
+title = {Joint parallel modeling with direction-wise convolution and deformable transformer for 3D medical image segmentation},
+journal = {Biomedical Signal Processing and Control},
+volume = {114},
+pages = {109320},
+year = {2026},
+issn = {1746-8094},
+doi = {https://doi.org/10.1016/j.bspc.2025.109320},
+url = {https://www.sciencedirect.com/science/article/pii/S1746809425018312},
+```
 
 # Contact
 
